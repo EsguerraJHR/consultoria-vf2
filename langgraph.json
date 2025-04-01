@@ -1,0 +1,79 @@
+{
+  "graphs": {
+    "agent": "graph/graph.py:app",
+    "retencion": "graph/topics/retencion/graph.py:app",
+    "iva": "graph/topics/iva/graph.py:app",
+    "timbre": "graph/topics/timbre/graph.py:app",
+    "ipoconsumo": "graph/topics/ipoconsumo/graph.py:app",
+    "aduanas": "graph/topics/aduanas/graph.py:app",
+    "cambiario": "graph/topics/cambiario/graph.py:app"
+  },
+  "config": {
+    "agent": {
+      "initial_state": {
+        "question": "¿Cuáles son los requisitos para la retención en la fuente en Colombia?",
+        "documents": [],
+        "generation": "",
+        "web_search": false,
+        "citations": [],
+        "has_structure": false
+      }
+    },
+    "retencion": {
+      "initial_state": {
+        "question": "¿Cuál es el tratamiento de la retención en la fuente en los contratos de cuentas en participación?",
+        "documents": [],
+        "generation": "",
+        "verify_result": "",
+        "citations": []
+      }
+    },
+    "iva": {
+      "initial_state": {
+        "question": "¿Cuáles son los bienes exentos de IVA en Colombia?",
+        "documents": [],
+        "generation": "",
+        "verify_result": "",
+        "citations": []
+      }
+    },
+    "timbre": {
+      "initial_state": {
+        "question": "¿Qué documentos están gravados con el impuesto de timbre en Colombia?",
+        "documents": [],
+        "generation": "",
+        "verify_result": "",
+        "citations": []
+      }
+    },
+    "ipoconsumo": {
+      "initial_state": {
+        "question": "¿Cuáles son las tarifas del Impuesto al Consumo en Colombia?",
+        "documents": [],
+        "generation": "",
+        "verify_result": "",
+        "citations": []
+      }
+    },
+    "aduanas": {
+      "initial_state": {
+        "question": "¿Cómo se determina el valor en aduana para la importación de mercancías?",
+        "documents": [],
+        "generation": "",
+        "verify_result": "",
+        "citations": []
+      }
+    },
+    "cambiario": {
+      "initial_state": {
+        "question": "¿Cómo funciona el régimen de inversión extranjera en Colombia?",
+        "documents": [],
+        "generation": "",
+        "verify_result": "",
+        "citations": []
+      }
+    }
+  },
+  "env": ".env",
+  "dependencies": ["."]
+} 
