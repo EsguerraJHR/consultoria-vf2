@@ -17,8 +17,9 @@ EMBEDDING_MODEL = "text-embedding-3-large"
 TOP_K = 5  # Número de resultados a recuperar
 
 # Configuración específica para Renta
-RENTA_INDEX_NAME = os.environ.get("PINECONE_INDEX_NAME", "ejhr")
+RENTA_INDEX_NAME = "renta"
 RENTA_NAMESPACE = "renta"
+RENTA_TOP_K = 8  # Valor específico para Timbre
 
 # Configuración específica para Timbre
 TIMBRE_INDEX_NAME = "timbre"
