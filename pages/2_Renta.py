@@ -33,7 +33,7 @@ La base de conocimiento incluye conceptos de la Dian sobre renta desde 2017 hast
 try:
     import pinecone
     pinecone_api_key = os.environ.get("PINECONE_API_KEY")
-    index_name = os.environ.get("PINECONE_INDEX_NAME", "ejhr")
+    index_name = os.environ.get("PINECONE_INDEX_NAME", "renta")
     
     if not pinecone_api_key:
         st.warning("No se ha configurado la API key de Pinecone. Por favor, configura la variable PINECONE_API_KEY en el archivo .env.")
